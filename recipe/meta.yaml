@@ -1,13 +1,13 @@
 {% set name = "omicverse" %}
-{% set version = "1.4.11" %}
+{% set version = "1.4.12" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1cab32bc2e87dc3d70785335480d2e70834cf66461daf504f33eadb265833cb0
+  sha256: 13838385abd625a7de374cb6ddd7ea756224df982c12272c0e1c8c8a00c7dae6
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - flit >=3.2,<4
     - python >=3.8
     - pip
-    
+
   run:
     - python >=3.8
     - numpy >=1.22,<1.24
@@ -58,10 +58,10 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'A python library for multi omics included bulk and single cell RNA-seq analysis.'
+  summary: A python library for multi omics included bulk and single cell RNA-seq analysis.
   dev_url: https://github.com/Starlitnightly/omicverse
 
 extra:
   recipe-maintainers:
     - Starlitnightly
-    
+
