@@ -2,8 +2,8 @@
 {% set version = "1.5.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
@@ -60,7 +60,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'A python library for multi omics included bulk and single cell RNA-seq analysis.'
+  summary: A python library for multi omics included bulk, single and spatial cell RNA-seq analysis.
   dev_url: https://github.com/Starlitnightly/omicverse
 
 extra:
