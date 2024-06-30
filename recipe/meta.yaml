@@ -1,5 +1,5 @@
 {% set name = "omicverse" %}
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 579084beb31e5d2f499fdbce6a4586d5acb2eca670b2fe5034c470d41e61a745
+  sha256: e806a17fc146841cb4cb2f1d8b03c0c4a4e82949fba89cf647c753e46a88eef9
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - pandas <=1.5.3
     - matplotlib-base <3.7
     - scikit-learn >=1.2
-    - scipy >=1.8
+    - scipy >=1.8,<1.12
     - pytorch >=1.8
     - networkx >=2.8
     - seaborn >=0.11
