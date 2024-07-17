@@ -1,5 +1,5 @@
 {% set name = "omicverse" %}
-{% set version = "1.6.4" %}
+{% set version = "1.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 645a27f0261c45fa3ef98d4fbe5bcbbcf3b923be1a1d7061abaf29485a56f0e4
+  sha256: dcecd988a63ea43afe4c57e6434859bfb59f6932f4146607f639c74ca3f3848c
 
 build:
   noarch: python
