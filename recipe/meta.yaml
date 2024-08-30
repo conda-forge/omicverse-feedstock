@@ -53,6 +53,7 @@ requirements:
     - plotly
     - pynvml
     - tqdm
+    - bioservices
 
 test:
   imports:
