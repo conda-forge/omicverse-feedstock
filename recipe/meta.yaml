@@ -54,6 +54,7 @@ requirements:
     - pynvml
     - tqdm
     - bioservices
+    - transformers
 
 test:
   imports:
