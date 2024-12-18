@@ -55,6 +55,8 @@ requirements:
     - tqdm
     - bioservices
     - transformers
+    - pot
+    - wget
 
 test:
   imports:
