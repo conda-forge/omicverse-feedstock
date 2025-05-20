@@ -57,6 +57,7 @@ requirements:
     - transformers
     - pot
     - wget
+    - tomli
 
 test:
   imports:
