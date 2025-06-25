@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - flit >=3.2,<4
-    - python >=3.8
+    - python {{ python_min }}
     - pip
 
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=1.23
     - pandas >=1.5
     - matplotlib-base <3.7
@@ -61,6 +61,8 @@ requirements:
     - marsilea
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - omicverse
 
