@@ -59,6 +59,7 @@ requirements:
     - wget
     - tomli
     - marsilea
+    - wandb
 
 test:
   imports:
